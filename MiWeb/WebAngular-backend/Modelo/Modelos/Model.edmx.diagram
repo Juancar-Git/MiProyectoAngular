@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2cc95187be74402d87d2b1615f93663d" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.About" Width="1.5" PointX="3" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AboutItems" Width="1.5" PointX="5.25" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AboutSponsors" Width="1.5" PointX="5.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AboutStatistics" Width="1.5" PointX="5.25" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AboutTecnologies" Width="1.5" PointX="5.25" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Contact" Width="1.5" PointX="3" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ContactData" Width="1.5" PointX="5.25" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ContactMessages" Width="1.5" PointX="5.25" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.GeneralPage" Width="1.5" PointX="0.75" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Home" Width="1.5" PointX="3" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.HomeItems" Width="1.5" PointX="5.25" PointY="20.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Portfolio" Width="1.5" PointX="3" PointY="24.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.PortfolioItems" Width="1.5" PointX="5.25" PointY="24.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Services" Width="1.5" PointX="3" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ServicesEmployees" Width="1.5" PointX="5.25" PointY="27.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ServicesItems" Width="1.5" PointX="5.25" PointY="30.625" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_About_GeneralPage" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AboutItems_About" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AboutSponsors_About" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AboutStatistics_About" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AboutTecnologies_About" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Contact_GeneralPage" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_ContactData_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_ContactMessages_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Home_GeneralPage" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Portfolio_GeneralPage" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Services_GeneralPage" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_HomeItems_Home" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_PortfolioItems_Portfolio" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_ServicesEmployees_Services" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_ServicesItems_Services" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

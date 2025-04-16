@@ -1,0 +1,1114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="About">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="sectionName" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="mainSubtitle" Type="varchar" MaxLength="300" Nullable="false" />
+          <Property Name="secondarySubtitle" Type="varchar" MaxLength="300" Nullable="false" />
+          <Property Name="description" Type="varchar" MaxLength="300" Nullable="false" />
+          <Property Name="mainImagePath" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="generalPageId" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AboutItems">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="70" Nullable="false" />
+          <Property Name="description" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="icon" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="enabledItem" Type="bit" Nullable="false" />
+          <Property Name="aboutId" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AboutSponsors">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="imagePath" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="enabledItem" Type="bit" Nullable="false" />
+          <Property Name="aboutId" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AboutStatistics">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="quantity" Type="int" Nullable="false" />
+          <Property Name="icon" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="aboutId" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AboutTecnologies">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="percentage" Type="int" Nullable="false" />
+          <Property Name="aboutId" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Contact">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="sectionName" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="videoButton" Type="varchar" MaxLength="15" />
+          <Property Name="generalPageId" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ContactData">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="address" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="phone" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="email" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="mapIframeSrc" Type="varchar(max)" Nullable="false" />
+          <Property Name="contactId" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ContactMessages">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="email" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="subject" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="messageText" Type="varchar(max)" Nullable="false" />
+          <Property Name="contactId" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GeneralPage">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Home">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="sectionName" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="subtitle" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="backgroundImagePath" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="startButton" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="videoButton" Type="varchar" MaxLength="15" />
+          <Property Name="videoButtonUrl" Type="bit" Nullable="false" />
+          <Property Name="generalPageId" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="HomeItems">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="description" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="icon" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="linkUrl" Type="varchar(max)" Nullable="false" />
+          <Property Name="enabledItem" Type="bit" Nullable="false" />
+          <Property Name="homeId" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Portfolio">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="sectionName" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="generalPageId" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PortfolioItems">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="70" Nullable="false" />
+          <Property Name="description" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="pictureUrl" Type="varchar(max)" Nullable="false" />
+          <Property Name="portfolioId" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Services">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="sectionName" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="generalPageId" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ServicesEmployees">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="lastName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="job" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="description" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="stars" Type="int" Nullable="false" />
+          <Property Name="pictureUrl" Type="varchar(max)" Nullable="false" />
+          <Property Name="servicesId" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ServicesItems">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="70" Nullable="false" />
+          <Property Name="description" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="icon" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="linkUrl" Type="varchar(max)" Nullable="false" />
+          <Property Name="servicesId" Type="bigint" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_About_GeneralPage">
+          <End Role="GeneralPage" Type="Self.GeneralPage" Multiplicity="1" />
+          <End Role="About" Type="Self.About" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GeneralPage">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="About">
+              <PropertyRef Name="generalPageId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AboutItems_About">
+          <End Role="About" Type="Self.About" Multiplicity="1" />
+          <End Role="AboutItems" Type="Self.AboutItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="About">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="AboutItems">
+              <PropertyRef Name="aboutId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AboutSponsors_About">
+          <End Role="About" Type="Self.About" Multiplicity="1" />
+          <End Role="AboutSponsors" Type="Self.AboutSponsors" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="About">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="AboutSponsors">
+              <PropertyRef Name="aboutId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AboutStatistics_About">
+          <End Role="About" Type="Self.About" Multiplicity="1" />
+          <End Role="AboutStatistics" Type="Self.AboutStatistics" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="About">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="AboutStatistics">
+              <PropertyRef Name="aboutId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AboutTecnologies_About">
+          <End Role="About" Type="Self.About" Multiplicity="1" />
+          <End Role="AboutTecnologies" Type="Self.AboutTecnologies" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="About">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="AboutTecnologies">
+              <PropertyRef Name="aboutId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Contact_GeneralPage">
+          <End Role="GeneralPage" Type="Self.GeneralPage" Multiplicity="1" />
+          <End Role="Contact" Type="Self.Contact" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GeneralPage">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Contact">
+              <PropertyRef Name="generalPageId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ContactData_Contact">
+          <End Role="Contact" Type="Self.Contact" Multiplicity="1" />
+          <End Role="ContactData" Type="Self.ContactData" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Contact">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ContactData">
+              <PropertyRef Name="contactId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ContactMessages_Contact">
+          <End Role="Contact" Type="Self.Contact" Multiplicity="1" />
+          <End Role="ContactMessages" Type="Self.ContactMessages" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Contact">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ContactMessages">
+              <PropertyRef Name="contactId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Home_GeneralPage">
+          <End Role="GeneralPage" Type="Self.GeneralPage" Multiplicity="1" />
+          <End Role="Home" Type="Self.Home" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GeneralPage">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Home">
+              <PropertyRef Name="generalPageId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HomeItems_Home">
+          <End Role="Home" Type="Self.Home" Multiplicity="1" />
+          <End Role="HomeItems" Type="Self.HomeItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Home">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="HomeItems">
+              <PropertyRef Name="homeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Portfolio_GeneralPage">
+          <End Role="GeneralPage" Type="Self.GeneralPage" Multiplicity="1" />
+          <End Role="Portfolio" Type="Self.Portfolio" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GeneralPage">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Portfolio">
+              <PropertyRef Name="generalPageId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PortfolioItems_Portfolio">
+          <End Role="Portfolio" Type="Self.Portfolio" Multiplicity="1" />
+          <End Role="PortfolioItems" Type="Self.PortfolioItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Portfolio">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="PortfolioItems">
+              <PropertyRef Name="portfolioId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Services_GeneralPage">
+          <End Role="GeneralPage" Type="Self.GeneralPage" Multiplicity="1" />
+          <End Role="Services" Type="Self.Services" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GeneralPage">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Services">
+              <PropertyRef Name="generalPageId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ServicesEmployees_Services">
+          <End Role="Services" Type="Self.Services" Multiplicity="1" />
+          <End Role="ServicesEmployees" Type="Self.ServicesEmployees" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Services">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ServicesEmployees">
+              <PropertyRef Name="servicesId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ServicesItems_Services">
+          <End Role="Services" Type="Self.Services" Multiplicity="1" />
+          <End Role="ServicesItems" Type="Self.ServicesItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Services">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ServicesItems">
+              <PropertyRef Name="servicesId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="About" EntityType="Self.About" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AboutItems" EntityType="Self.AboutItems" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AboutSponsors" EntityType="Self.AboutSponsors" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AboutStatistics" EntityType="Self.AboutStatistics" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AboutTecnologies" EntityType="Self.AboutTecnologies" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Contact" EntityType="Self.Contact" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ContactData" EntityType="Self.ContactData" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ContactMessages" EntityType="Self.ContactMessages" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="GeneralPage" EntityType="Self.GeneralPage" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Home" EntityType="Self.Home" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HomeItems" EntityType="Self.HomeItems" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Portfolio" EntityType="Self.Portfolio" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PortfolioItems" EntityType="Self.PortfolioItems" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Services" EntityType="Self.Services" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ServicesEmployees" EntityType="Self.ServicesEmployees" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ServicesItems" EntityType="Self.ServicesItems" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_About_GeneralPage" Association="Self.FK_About_GeneralPage">
+            <End Role="GeneralPage" EntitySet="GeneralPage" />
+            <End Role="About" EntitySet="About" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AboutItems_About" Association="Self.FK_AboutItems_About">
+            <End Role="About" EntitySet="About" />
+            <End Role="AboutItems" EntitySet="AboutItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AboutSponsors_About" Association="Self.FK_AboutSponsors_About">
+            <End Role="About" EntitySet="About" />
+            <End Role="AboutSponsors" EntitySet="AboutSponsors" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AboutStatistics_About" Association="Self.FK_AboutStatistics_About">
+            <End Role="About" EntitySet="About" />
+            <End Role="AboutStatistics" EntitySet="AboutStatistics" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AboutTecnologies_About" Association="Self.FK_AboutTecnologies_About">
+            <End Role="About" EntitySet="About" />
+            <End Role="AboutTecnologies" EntitySet="AboutTecnologies" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Contact_GeneralPage" Association="Self.FK_Contact_GeneralPage">
+            <End Role="GeneralPage" EntitySet="GeneralPage" />
+            <End Role="Contact" EntitySet="Contact" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ContactData_Contact" Association="Self.FK_ContactData_Contact">
+            <End Role="Contact" EntitySet="Contact" />
+            <End Role="ContactData" EntitySet="ContactData" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ContactMessages_Contact" Association="Self.FK_ContactMessages_Contact">
+            <End Role="Contact" EntitySet="Contact" />
+            <End Role="ContactMessages" EntitySet="ContactMessages" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Home_GeneralPage" Association="Self.FK_Home_GeneralPage">
+            <End Role="GeneralPage" EntitySet="GeneralPage" />
+            <End Role="Home" EntitySet="Home" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HomeItems_Home" Association="Self.FK_HomeItems_Home">
+            <End Role="Home" EntitySet="Home" />
+            <End Role="HomeItems" EntitySet="HomeItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Portfolio_GeneralPage" Association="Self.FK_Portfolio_GeneralPage">
+            <End Role="GeneralPage" EntitySet="GeneralPage" />
+            <End Role="Portfolio" EntitySet="Portfolio" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PortfolioItems_Portfolio" Association="Self.FK_PortfolioItems_Portfolio">
+            <End Role="Portfolio" EntitySet="Portfolio" />
+            <End Role="PortfolioItems" EntitySet="PortfolioItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Services_GeneralPage" Association="Self.FK_Services_GeneralPage">
+            <End Role="GeneralPage" EntitySet="GeneralPage" />
+            <End Role="Services" EntitySet="Services" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ServicesEmployees_Services" Association="Self.FK_ServicesEmployees_Services">
+            <End Role="Services" EntitySet="Services" />
+            <End Role="ServicesEmployees" EntitySet="ServicesEmployees" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ServicesItems_Services" Association="Self.FK_ServicesItems_Services">
+            <End Role="Services" EntitySet="Services" />
+            <End Role="ServicesItems" EntitySet="ServicesItems" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="About">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="sectionName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="title" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="mainSubtitle" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="secondarySubtitle" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="mainImagePath" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="generalPageId" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="GeneralPage" Relationship="Self.FK_About_GeneralPage" FromRole="About" ToRole="GeneralPage" />
+          <NavigationProperty Name="AboutItems" Relationship="Self.FK_AboutItems_About" FromRole="About" ToRole="AboutItems" />
+          <NavigationProperty Name="AboutSponsors" Relationship="Self.FK_AboutSponsors_About" FromRole="About" ToRole="AboutSponsors" />
+          <NavigationProperty Name="AboutStatistics" Relationship="Self.FK_AboutStatistics_About" FromRole="About" ToRole="AboutStatistics" />
+          <NavigationProperty Name="AboutTecnologies" Relationship="Self.FK_AboutTecnologies_About" FromRole="About" ToRole="AboutTecnologies" />
+        </EntityType>
+        <EntityType Name="AboutItems">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="70" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="icon" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="enabledItem" Type="Boolean" Nullable="false" />
+          <Property Name="aboutId" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="About" Relationship="Self.FK_AboutItems_About" FromRole="AboutItems" ToRole="About" />
+        </EntityType>
+        <EntityType Name="AboutSponsors">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="imagePath" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="enabledItem" Type="Boolean" Nullable="false" />
+          <Property Name="aboutId" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="About" Relationship="Self.FK_AboutSponsors_About" FromRole="AboutSponsors" ToRole="About" />
+        </EntityType>
+        <EntityType Name="AboutStatistics">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="quantity" Type="Int32" Nullable="false" />
+          <Property Name="icon" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="aboutId" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="About" Relationship="Self.FK_AboutStatistics_About" FromRole="AboutStatistics" ToRole="About" />
+        </EntityType>
+        <EntityType Name="AboutTecnologies">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="percentage" Type="Int32" Nullable="false" />
+          <Property Name="aboutId" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="About" Relationship="Self.FK_AboutTecnologies_About" FromRole="AboutTecnologies" ToRole="About" />
+        </EntityType>
+        <EntityType Name="Contact">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="sectionName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="title" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="videoButton" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="generalPageId" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="GeneralPage" Relationship="Self.FK_Contact_GeneralPage" FromRole="Contact" ToRole="GeneralPage" />
+          <NavigationProperty Name="ContactData" Relationship="Self.FK_ContactData_Contact" FromRole="Contact" ToRole="ContactData" />
+          <NavigationProperty Name="ContactMessages" Relationship="Self.FK_ContactMessages_Contact" FromRole="Contact" ToRole="ContactMessages" />
+        </EntityType>
+        <EntityType Name="ContactData">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="address" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="phone" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="mapIframeSrc" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="contactId" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="Contact" Relationship="Self.FK_ContactData_Contact" FromRole="ContactData" ToRole="Contact" />
+        </EntityType>
+        <EntityType Name="ContactMessages">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="subject" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="messageText" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="contactId" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="Contact" Relationship="Self.FK_ContactMessages_Contact" FromRole="ContactMessages" ToRole="Contact" />
+        </EntityType>
+        <EntityType Name="GeneralPage">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="About" Relationship="Self.FK_About_GeneralPage" FromRole="GeneralPage" ToRole="About" />
+          <NavigationProperty Name="Contact" Relationship="Self.FK_Contact_GeneralPage" FromRole="GeneralPage" ToRole="Contact" />
+          <NavigationProperty Name="Home" Relationship="Self.FK_Home_GeneralPage" FromRole="GeneralPage" ToRole="Home" />
+          <NavigationProperty Name="Portfolio" Relationship="Self.FK_Portfolio_GeneralPage" FromRole="GeneralPage" ToRole="Portfolio" />
+          <NavigationProperty Name="Services" Relationship="Self.FK_Services_GeneralPage" FromRole="GeneralPage" ToRole="Services" />
+        </EntityType>
+        <EntityType Name="Home">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="sectionName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="title" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="subtitle" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="backgroundImagePath" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="startButton" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="videoButton" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="videoButtonUrl" Type="Boolean" Nullable="false" />
+          <Property Name="generalPageId" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="GeneralPage" Relationship="Self.FK_Home_GeneralPage" FromRole="Home" ToRole="GeneralPage" />
+          <NavigationProperty Name="HomeItems" Relationship="Self.FK_HomeItems_Home" FromRole="Home" ToRole="HomeItems" />
+        </EntityType>
+        <EntityType Name="HomeItems">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="icon" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="linkUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="enabledItem" Type="Boolean" Nullable="false" />
+          <Property Name="homeId" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="Home" Relationship="Self.FK_HomeItems_Home" FromRole="HomeItems" ToRole="Home" />
+        </EntityType>
+        <EntityType Name="Portfolio">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="sectionName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="title" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="generalPageId" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="GeneralPage" Relationship="Self.FK_Portfolio_GeneralPage" FromRole="Portfolio" ToRole="GeneralPage" />
+          <NavigationProperty Name="PortfolioItems" Relationship="Self.FK_PortfolioItems_Portfolio" FromRole="Portfolio" ToRole="PortfolioItems" />
+        </EntityType>
+        <EntityType Name="PortfolioItems">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="70" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="pictureUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="portfolioId" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="Portfolio" Relationship="Self.FK_PortfolioItems_Portfolio" FromRole="PortfolioItems" ToRole="Portfolio" />
+        </EntityType>
+        <EntityType Name="Services">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="sectionName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="title" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="generalPageId" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="GeneralPage" Relationship="Self.FK_Services_GeneralPage" FromRole="Services" ToRole="GeneralPage" />
+          <NavigationProperty Name="ServicesEmployees" Relationship="Self.FK_ServicesEmployees_Services" FromRole="Services" ToRole="ServicesEmployees" />
+          <NavigationProperty Name="ServicesItems" Relationship="Self.FK_ServicesItems_Services" FromRole="Services" ToRole="ServicesItems" />
+        </EntityType>
+        <EntityType Name="ServicesEmployees">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="lastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="job" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="stars" Type="Int32" Nullable="false" />
+          <Property Name="pictureUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="servicesId" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="Services" Relationship="Self.FK_ServicesEmployees_Services" FromRole="ServicesEmployees" ToRole="Services" />
+        </EntityType>
+        <EntityType Name="ServicesItems">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="70" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="icon" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="linkUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="servicesId" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="Services" Relationship="Self.FK_ServicesItems_Services" FromRole="ServicesItems" ToRole="Services" />
+        </EntityType>
+        <Association Name="FK_About_GeneralPage">
+          <End Role="GeneralPage" Type="Self.GeneralPage" Multiplicity="1" />
+          <End Role="About" Type="Self.About" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GeneralPage">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="About">
+              <PropertyRef Name="generalPageId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AboutItems_About">
+          <End Role="About" Type="Self.About" Multiplicity="1" />
+          <End Role="AboutItems" Type="Self.AboutItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="About">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="AboutItems">
+              <PropertyRef Name="aboutId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AboutSponsors_About">
+          <End Role="About" Type="Self.About" Multiplicity="1" />
+          <End Role="AboutSponsors" Type="Self.AboutSponsors" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="About">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="AboutSponsors">
+              <PropertyRef Name="aboutId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AboutStatistics_About">
+          <End Role="About" Type="Self.About" Multiplicity="1" />
+          <End Role="AboutStatistics" Type="Self.AboutStatistics" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="About">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="AboutStatistics">
+              <PropertyRef Name="aboutId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AboutTecnologies_About">
+          <End Role="About" Type="Self.About" Multiplicity="1" />
+          <End Role="AboutTecnologies" Type="Self.AboutTecnologies" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="About">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="AboutTecnologies">
+              <PropertyRef Name="aboutId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Contact_GeneralPage">
+          <End Role="GeneralPage" Type="Self.GeneralPage" Multiplicity="1" />
+          <End Role="Contact" Type="Self.Contact" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GeneralPage">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Contact">
+              <PropertyRef Name="generalPageId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ContactData_Contact">
+          <End Role="Contact" Type="Self.Contact" Multiplicity="1" />
+          <End Role="ContactData" Type="Self.ContactData" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Contact">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ContactData">
+              <PropertyRef Name="contactId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ContactMessages_Contact">
+          <End Role="Contact" Type="Self.Contact" Multiplicity="1" />
+          <End Role="ContactMessages" Type="Self.ContactMessages" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Contact">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ContactMessages">
+              <PropertyRef Name="contactId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Home_GeneralPage">
+          <End Role="GeneralPage" Type="Self.GeneralPage" Multiplicity="1" />
+          <End Role="Home" Type="Self.Home" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GeneralPage">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Home">
+              <PropertyRef Name="generalPageId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Portfolio_GeneralPage">
+          <End Role="GeneralPage" Type="Self.GeneralPage" Multiplicity="1" />
+          <End Role="Portfolio" Type="Self.Portfolio" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GeneralPage">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Portfolio">
+              <PropertyRef Name="generalPageId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Services_GeneralPage">
+          <End Role="GeneralPage" Type="Self.GeneralPage" Multiplicity="1" />
+          <End Role="Services" Type="Self.Services" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GeneralPage">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Services">
+              <PropertyRef Name="generalPageId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HomeItems_Home">
+          <End Role="Home" Type="Self.Home" Multiplicity="1" />
+          <End Role="HomeItems" Type="Self.HomeItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Home">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="HomeItems">
+              <PropertyRef Name="homeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PortfolioItems_Portfolio">
+          <End Role="Portfolio" Type="Self.Portfolio" Multiplicity="1" />
+          <End Role="PortfolioItems" Type="Self.PortfolioItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Portfolio">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="PortfolioItems">
+              <PropertyRef Name="portfolioId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ServicesEmployees_Services">
+          <End Role="Services" Type="Self.Services" Multiplicity="1" />
+          <End Role="ServicesEmployees" Type="Self.ServicesEmployees" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Services">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ServicesEmployees">
+              <PropertyRef Name="servicesId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ServicesItems_Services">
+          <End Role="Services" Type="Self.Services" Multiplicity="1" />
+          <End Role="ServicesItems" Type="Self.ServicesItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Services">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ServicesItems">
+              <PropertyRef Name="servicesId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DbConnection" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="About" EntityType="Self.About" />
+          <EntitySet Name="AboutItems" EntityType="Self.AboutItems" />
+          <EntitySet Name="AboutSponsors" EntityType="Self.AboutSponsors" />
+          <EntitySet Name="AboutStatistics" EntityType="Self.AboutStatistics" />
+          <EntitySet Name="AboutTecnologies" EntityType="Self.AboutTecnologies" />
+          <EntitySet Name="Contact" EntityType="Self.Contact" />
+          <EntitySet Name="ContactData" EntityType="Self.ContactData" />
+          <EntitySet Name="ContactMessages" EntityType="Self.ContactMessages" />
+          <EntitySet Name="GeneralPage" EntityType="Self.GeneralPage" />
+          <EntitySet Name="Home" EntityType="Self.Home" />
+          <EntitySet Name="HomeItems" EntityType="Self.HomeItems" />
+          <EntitySet Name="Portfolio" EntityType="Self.Portfolio" />
+          <EntitySet Name="PortfolioItems" EntityType="Self.PortfolioItems" />
+          <EntitySet Name="Services" EntityType="Self.Services" />
+          <EntitySet Name="ServicesEmployees" EntityType="Self.ServicesEmployees" />
+          <EntitySet Name="ServicesItems" EntityType="Self.ServicesItems" />
+          <AssociationSet Name="FK_About_GeneralPage" Association="Self.FK_About_GeneralPage">
+            <End Role="GeneralPage" EntitySet="GeneralPage" />
+            <End Role="About" EntitySet="About" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AboutItems_About" Association="Self.FK_AboutItems_About">
+            <End Role="About" EntitySet="About" />
+            <End Role="AboutItems" EntitySet="AboutItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AboutSponsors_About" Association="Self.FK_AboutSponsors_About">
+            <End Role="About" EntitySet="About" />
+            <End Role="AboutSponsors" EntitySet="AboutSponsors" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AboutStatistics_About" Association="Self.FK_AboutStatistics_About">
+            <End Role="About" EntitySet="About" />
+            <End Role="AboutStatistics" EntitySet="AboutStatistics" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AboutTecnologies_About" Association="Self.FK_AboutTecnologies_About">
+            <End Role="About" EntitySet="About" />
+            <End Role="AboutTecnologies" EntitySet="AboutTecnologies" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Contact_GeneralPage" Association="Self.FK_Contact_GeneralPage">
+            <End Role="GeneralPage" EntitySet="GeneralPage" />
+            <End Role="Contact" EntitySet="Contact" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ContactData_Contact" Association="Self.FK_ContactData_Contact">
+            <End Role="Contact" EntitySet="Contact" />
+            <End Role="ContactData" EntitySet="ContactData" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ContactMessages_Contact" Association="Self.FK_ContactMessages_Contact">
+            <End Role="Contact" EntitySet="Contact" />
+            <End Role="ContactMessages" EntitySet="ContactMessages" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Home_GeneralPage" Association="Self.FK_Home_GeneralPage">
+            <End Role="GeneralPage" EntitySet="GeneralPage" />
+            <End Role="Home" EntitySet="Home" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Portfolio_GeneralPage" Association="Self.FK_Portfolio_GeneralPage">
+            <End Role="GeneralPage" EntitySet="GeneralPage" />
+            <End Role="Portfolio" EntitySet="Portfolio" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Services_GeneralPage" Association="Self.FK_Services_GeneralPage">
+            <End Role="GeneralPage" EntitySet="GeneralPage" />
+            <End Role="Services" EntitySet="Services" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HomeItems_Home" Association="Self.FK_HomeItems_Home">
+            <End Role="Home" EntitySet="Home" />
+            <End Role="HomeItems" EntitySet="HomeItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PortfolioItems_Portfolio" Association="Self.FK_PortfolioItems_Portfolio">
+            <End Role="Portfolio" EntitySet="Portfolio" />
+            <End Role="PortfolioItems" EntitySet="PortfolioItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ServicesEmployees_Services" Association="Self.FK_ServicesEmployees_Services">
+            <End Role="Services" EntitySet="Services" />
+            <End Role="ServicesEmployees" EntitySet="ServicesEmployees" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ServicesItems_Services" Association="Self.FK_ServicesItems_Services">
+            <End Role="Services" EntitySet="Services" />
+            <End Role="ServicesItems" EntitySet="ServicesItems" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="DbConnection">
+          <EntitySetMapping Name="About">
+            <EntityTypeMapping TypeName="Model.About">
+              <MappingFragment StoreEntitySet="About">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="sectionName" ColumnName="sectionName" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="mainSubtitle" ColumnName="mainSubtitle" />
+                <ScalarProperty Name="secondarySubtitle" ColumnName="secondarySubtitle" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="mainImagePath" ColumnName="mainImagePath" />
+                <ScalarProperty Name="generalPageId" ColumnName="generalPageId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AboutItems">
+            <EntityTypeMapping TypeName="Model.AboutItems">
+              <MappingFragment StoreEntitySet="AboutItems">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="icon" ColumnName="icon" />
+                <ScalarProperty Name="enabledItem" ColumnName="enabledItem" />
+                <ScalarProperty Name="aboutId" ColumnName="aboutId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AboutSponsors">
+            <EntityTypeMapping TypeName="Model.AboutSponsors">
+              <MappingFragment StoreEntitySet="AboutSponsors">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="imagePath" ColumnName="imagePath" />
+                <ScalarProperty Name="enabledItem" ColumnName="enabledItem" />
+                <ScalarProperty Name="aboutId" ColumnName="aboutId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AboutStatistics">
+            <EntityTypeMapping TypeName="Model.AboutStatistics">
+              <MappingFragment StoreEntitySet="AboutStatistics">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="quantity" ColumnName="quantity" />
+                <ScalarProperty Name="icon" ColumnName="icon" />
+                <ScalarProperty Name="aboutId" ColumnName="aboutId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AboutTecnologies">
+            <EntityTypeMapping TypeName="Model.AboutTecnologies">
+              <MappingFragment StoreEntitySet="AboutTecnologies">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="percentage" ColumnName="percentage" />
+                <ScalarProperty Name="aboutId" ColumnName="aboutId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Contact">
+            <EntityTypeMapping TypeName="Model.Contact">
+              <MappingFragment StoreEntitySet="Contact">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="sectionName" ColumnName="sectionName" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="videoButton" ColumnName="videoButton" />
+                <ScalarProperty Name="generalPageId" ColumnName="generalPageId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ContactData">
+            <EntityTypeMapping TypeName="Model.ContactData">
+              <MappingFragment StoreEntitySet="ContactData">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="phone" ColumnName="phone" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="mapIframeSrc" ColumnName="mapIframeSrc" />
+                <ScalarProperty Name="contactId" ColumnName="contactId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ContactMessages">
+            <EntityTypeMapping TypeName="Model.ContactMessages">
+              <MappingFragment StoreEntitySet="ContactMessages">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="subject" ColumnName="subject" />
+                <ScalarProperty Name="messageText" ColumnName="messageText" />
+                <ScalarProperty Name="contactId" ColumnName="contactId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GeneralPage">
+            <EntityTypeMapping TypeName="Model.GeneralPage">
+              <MappingFragment StoreEntitySet="GeneralPage">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Home">
+            <EntityTypeMapping TypeName="Model.Home">
+              <MappingFragment StoreEntitySet="Home">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="sectionName" ColumnName="sectionName" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="subtitle" ColumnName="subtitle" />
+                <ScalarProperty Name="backgroundImagePath" ColumnName="backgroundImagePath" />
+                <ScalarProperty Name="startButton" ColumnName="startButton" />
+                <ScalarProperty Name="videoButton" ColumnName="videoButton" />
+                <ScalarProperty Name="videoButtonUrl" ColumnName="videoButtonUrl" />
+                <ScalarProperty Name="generalPageId" ColumnName="generalPageId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HomeItems">
+            <EntityTypeMapping TypeName="Model.HomeItems">
+              <MappingFragment StoreEntitySet="HomeItems">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="icon" ColumnName="icon" />
+                <ScalarProperty Name="linkUrl" ColumnName="linkUrl" />
+                <ScalarProperty Name="enabledItem" ColumnName="enabledItem" />
+                <ScalarProperty Name="homeId" ColumnName="homeId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Portfolio">
+            <EntityTypeMapping TypeName="Model.Portfolio">
+              <MappingFragment StoreEntitySet="Portfolio">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="sectionName" ColumnName="sectionName" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="generalPageId" ColumnName="generalPageId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PortfolioItems">
+            <EntityTypeMapping TypeName="Model.PortfolioItems">
+              <MappingFragment StoreEntitySet="PortfolioItems">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="pictureUrl" ColumnName="pictureUrl" />
+                <ScalarProperty Name="portfolioId" ColumnName="portfolioId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Services">
+            <EntityTypeMapping TypeName="Model.Services">
+              <MappingFragment StoreEntitySet="Services">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="sectionName" ColumnName="sectionName" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="generalPageId" ColumnName="generalPageId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ServicesEmployees">
+            <EntityTypeMapping TypeName="Model.ServicesEmployees">
+              <MappingFragment StoreEntitySet="ServicesEmployees">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="lastName" ColumnName="lastName" />
+                <ScalarProperty Name="job" ColumnName="job" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="stars" ColumnName="stars" />
+                <ScalarProperty Name="pictureUrl" ColumnName="pictureUrl" />
+                <ScalarProperty Name="servicesId" ColumnName="servicesId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ServicesItems">
+            <EntityTypeMapping TypeName="Model.ServicesItems">
+              <MappingFragment StoreEntitySet="ServicesItems">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="icon" ColumnName="icon" />
+                <ScalarProperty Name="linkUrl" ColumnName="linkUrl" />
+                <ScalarProperty Name="servicesId" ColumnName="servicesId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
