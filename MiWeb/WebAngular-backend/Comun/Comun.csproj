@@ -56,6 +56,7 @@
     <Compile Include="ViewModel\PaginatedList.cs" />
     <Compile Include="ViewModel\PortfolioItemsVMR.cs" />
     <Compile Include="ViewModel\PortfolioVMR.cs" />
+    <Compile Include="ViewModel\ResponseVMR.cs" />
     <Compile Include="ViewModel\ServicesEmployeesVMR.cs" />
     <Compile Include="ViewModel\ServicesItemsVMR.cs" />
     <Compile Include="ViewModel\ServicesVMR.cs" />

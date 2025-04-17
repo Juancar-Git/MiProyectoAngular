@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace WebAngular_backend
 {
@@ -10,6 +11,7 @@ namespace WebAngular_backend
         public static void Register(HttpConfiguration config)
         {
             // Configuración y servicios de Web API
+            config.EnableCors();
 
             // Rutas de Web API
             config.MapHttpAttributeRoutes();

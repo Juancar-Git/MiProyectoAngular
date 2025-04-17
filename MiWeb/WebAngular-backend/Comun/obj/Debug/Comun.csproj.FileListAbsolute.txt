@@ -1,0 +1,6 @@
+C:\Users\carlos\OneDrive\Escritorio\WebAngular\MiProyectoAngular\MiWeb\WebAngular-backend\Comun\bin\Debug\Comun.dll
+C:\Users\carlos\OneDrive\Escritorio\WebAngular\MiProyectoAngular\MiWeb\WebAngular-backend\Comun\bin\Debug\Comun.pdb
+C:\Users\carlos\OneDrive\Escritorio\WebAngular\MiProyectoAngular\MiWeb\WebAngular-backend\Comun\obj\Debug\Comun.csproj.AssemblyReference.cache
+C:\Users\carlos\OneDrive\Escritorio\WebAngular\MiProyectoAngular\MiWeb\WebAngular-backend\Comun\obj\Debug\Comun.csproj.CoreCompileInputs.cache
+C:\Users\carlos\OneDrive\Escritorio\WebAngular\MiProyectoAngular\MiWeb\WebAngular-backend\Comun\obj\Debug\Comun.dll
+C:\Users\carlos\OneDrive\Escritorio\WebAngular\MiProyectoAngular\MiWeb\WebAngular-backend\Comun\obj\Debug\Comun.pdb

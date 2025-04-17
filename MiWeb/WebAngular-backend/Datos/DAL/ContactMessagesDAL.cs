@@ -62,7 +62,7 @@ namespace Datos.DAL
             return item;
         }
         
-        public static long GetCreate(ContactMessages item) {
+        public static long Create(ContactMessages item) {
 
             using (var db = DbConexion.Create())
             {
@@ -70,13 +70,13 @@ namespace Datos.DAL
                 db.SaveChanges();
             }
 
-            return 0;
+            return item.id;
         }
-        public static void GetUpdate(ContactMessagesVMR item) {
+        public static void Update(long id, ContactMessagesVMR item) {
 
             using (var db = DbConexion.Create())
             {
-                var itemUpdate = db.Set<ContactMessages>().Find(item.id);
+                var itemUpdate = db.Set<ContactMessages>().Find(id);
 
                 itemUpdate.name = item.name;
                 itemUpdate.email = item.email;
@@ -89,7 +89,7 @@ namespace Datos.DAL
             }
 
         }
-        public static void GetDelate(List<long> ids) {
+        public static void Delete(List<long> ids) {
 
             using (var db = DbConexion.Create())
             {

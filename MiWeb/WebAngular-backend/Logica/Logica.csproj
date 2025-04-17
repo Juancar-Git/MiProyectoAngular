@@ -41,6 +41,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\AboutBLL.cs" />
+    <Compile Include="BLL\AboutItemsBLL.cs" />
+    <Compile Include="BLL\AboutSponsorsBLL.cs" />
+    <Compile Include="BLL\AboutStatisticsBLL.cs" />
+    <Compile Include="BLL\AboutTecnologiesBLL.cs" />
+    <Compile Include="BLL\ContactBLL.cs" />
+    <Compile Include="BLL\ContactDataBLL.cs" />
+    <Compile Include="BLL\ContactMessagesBLL.cs" />
+    <Compile Include="BLL\GeneralPageBLL.cs" />
+    <Compile Include="BLL\HomeBLL.cs" />
+    <Compile Include="BLL\HomeItemsBLL.cs" />
+    <Compile Include="BLL\PortfolioBLL.cs" />
+    <Compile Include="BLL\PortfolioItemsBLL.cs" />
+    <Compile Include="BLL\ServicesBLL.cs" />
+    <Compile Include="BLL\ServicesEmployeesBLL.cs" />
+    <Compile Include="BLL\ServicesItemsBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -61,5 +77,6 @@
       <Name>Rest</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,12 +1,53 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{015E24DA-7741-441E-99FD-9759EFF20443}|WebAngular-backend\\WebAngular-backend.csproj|c:\\users\\carlos\\onedrive\\escritorio\\webangular\\miproyectoangular\\miweb\\webangular-backend\\webangular-backend\\controllers\\contactmessagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{015E24DA-7741-441E-99FD-9759EFF20443}|WebAngular-backend\\WebAngular-backend.csproj|solutionrelative:webangular-backend\\controllers\\contactmessagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{015E24DA-7741-441E-99FD-9759EFF20443}|WebAngular-backend\\WebAngular-backend.csproj|C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\webangular-backend\\controllers\\aboutitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{015E24DA-7741-441E-99FD-9759EFF20443}|WebAngular-backend\\WebAngular-backend.csproj|solutionrelative:webangular-backend\\controllers\\aboutitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ContactMessagesController.cs",
+              "DocumentMoniker": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\WebAngular-backend\\Controllers\\ContactMessagesController.cs",
+              "RelativeDocumentMoniker": "WebAngular-backend\\Controllers\\ContactMessagesController.cs",
+              "ToolTip": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\WebAngular-backend\\Controllers\\ContactMessagesController.cs",
+              "RelativeToolTip": "WebAngular-backend\\Controllers\\ContactMessagesController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T14:10:27.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AboutItemsController.cs",
+              "DocumentMoniker": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\WebAngular-backend\\Controllers\\AboutItemsController.cs",
+              "RelativeDocumentMoniker": "WebAngular-backend\\Controllers\\AboutItemsController.cs",
+              "ToolTip": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\WebAngular-backend\\Controllers\\AboutItemsController.cs",
+              "RelativeToolTip": "WebAngular-backend\\Controllers\\AboutItemsController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBYAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T14:06:51.706Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
