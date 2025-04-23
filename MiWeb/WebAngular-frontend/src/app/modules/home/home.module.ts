@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IndezComponent } from './components/indez/indez.component';
 import { IndexComponent } from './components/index/index.component';
+import { GlobalModule } from '../global/global.module';
 
 
 
 @NgModule({
   declarations: [
-    IndezComponent,
     IndexComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    GlobalModule
   ]
 })
 export class HomeModule { }

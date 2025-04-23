@@ -16,6 +16,9 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     RouterModule
+  ],
+  exports: [
+
   ]
 })
 export class GlobalModule { }

@@ -1,0 +1,6 @@
+.homeview{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('src/assets/img/hero-bg.jpg');
+}
+.bicon{
+    margin-right: 0.5rem;
+}

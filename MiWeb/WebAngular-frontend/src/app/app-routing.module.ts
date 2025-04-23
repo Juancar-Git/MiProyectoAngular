@@ -3,10 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { GlobalMenuComponent } from './modules/global/components/global-menu/global-menu.component';
 
 const routes: Routes = [
-  {path: '',
+{
+  path: '',
   component: GlobalMenuComponent,
   loadChildren: () => import('./rutas.module').then(m => m.RutasModule)
-
 }
 ];
 
