@@ -1,0 +1,20 @@
+
+.about-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    color: #106eea;
+    font-size: 2rem;
+    border-radius: .75rem;
+  }
+
+.about-tech{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+.about-progress{
+    height: 0.6rem;
+}

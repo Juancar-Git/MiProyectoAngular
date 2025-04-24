@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+.section-name{
+    background-color: rgba(16, 110, 234, 0.1);
+    border-radius: 16px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.section-title, .section-name{
+    color: #106eea;
+}

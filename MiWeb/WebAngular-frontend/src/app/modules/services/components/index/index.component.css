@@ -1,0 +1,32 @@
+.feature-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #106eea;
+    border-radius: .75rem;
+  }
+  .service-col{
+    padding: 0.5rem;
+  }
+  .service-item{
+    border-style: solid;
+    border-color: #dddedf;
+    border-width: 1px;
+    padding: 4rem 1rem;
+  }
+  .service-item:hover{
+    border-color: #106eea;
+  }
+  .service-item > h3:hover, p:hover{
+    border-style:dotted;
+    border-color: #106eea;
+    border-width: 1px;
+  }
+  .service-item:hover > h3{
+    color: #106eea;
+  }
