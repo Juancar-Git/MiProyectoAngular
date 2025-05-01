@@ -1,0 +1,14 @@
+.contact-icon{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #106eea;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+div.text-start:hover > div > .contact-icon{
+    background-color: #106eea;
+    color: white;
+}
