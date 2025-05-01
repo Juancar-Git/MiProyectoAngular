@@ -8,6 +8,63 @@
         <div class="row">
             <p class="fs-2"><b>Admin your <span class="section-title">Messages</span></b></p>
         </div>
-        
+
+        <div class="container-fluid py-5">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <button class="btn btn-primary">
+                        <i class="bi bi-plus-circle"></i>
+                        Add
+                    </button>
+                </div>
+                <div class="col-6 text-end">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" [(ngModel)]="searchText" name="searchText" (keyup.enter)="ReadAll()">
+                        <button class="btn btn-outline-success" type="submit" (click)="ReadAll()">Search</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col" *ngFor="let item of displayedColumns">{{item}}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let item of dataSource">
+                            <th scope="row">{{item.id}}</th>
+                            <td>{{item.name}}</td>
+                            <td>{{item.email}}</td>
+                            <td>{{item.subject}}</td>
+                            <td><button class="btn btn-primary" (click)="Delete(item.id)"><i class="bi bi-trash-fill"></i></button></td>
+                          </tr>
+                          <tr *ngIf="dataSource.length == 0">
+                            <td colspan="5"  [attr.colspan]="displayedColumns.length">
+                                <div>
+                                    <i class="bi bi-exclamation-circle text-danger mx-1"></i>
+                                    <i>Data not found</i>
+                                </div>
+                            </td>
+                        </tr>
+                          
+                        </tbody>
+                      </table>
+                      <nav aria-label="Page navigation example" *ngIf="totalPages > 1">
+                        <ul class="pagination justify-content-center">
+                          <li [ngClass]="isPreviousVisible?'page-item visible':'page-item invisible'"><button class="page-link" (click)="changePage(pageNumber - 1)">Previous</button></li>
+                          <span *ngFor="let item of pageNumberList">
+                            <li [ngClass]="item == pageNumber?'page-item active':'page-item'"><button class="page-link" (click)="changePage(item)">{{item+1}}</button></li>
+                          </span>
+                          <li [ngClass]="isLastVisible?'page-item visible':'page-item invisible'"><button class="page-link" (click)="changePage(pageNumber + 1)">Next</button></li>
+                        </ul>
+                      </nav>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

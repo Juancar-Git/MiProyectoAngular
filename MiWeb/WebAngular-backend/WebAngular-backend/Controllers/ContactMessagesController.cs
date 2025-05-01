@@ -19,7 +19,7 @@ namespace WebAngular_backend.Controllers
     {
         /*
          *  url
-            http://localhost:3059/api/contactmessages?quantity=1&page=1&searchText=
+            http://localhost:3059/api/contactmessages?quantity=1&page=0&searchText=
          */
         [HttpGet]
         public IHttpActionResult GetAll(int quantity = 10, int page = 0, string searchText = null)
