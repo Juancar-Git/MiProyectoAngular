@@ -9,3 +9,5 @@
 .section-title, .section-name{
     color: #106eea;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

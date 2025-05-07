@@ -5,8 +5,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { GlobalMenuComponent } from './components/global-menu/global-menu.component';
 import { RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
+import { MatDialogModule } from '@angular/material/dialog'
+
 
 
 
@@ -21,16 +23,20 @@ import { ToastrModule } from 'ngx-toastr';
     RouterModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     ToastrModule.forRoot({
       closeButton: true,
       progressBar: true,
       enableHtml: true
-    })
+    }),
+    MatDialogModule
   ],
   exports: [
     HttpClientModule,
     FormsModule,
-    ToastrModule
+    ToastrModule,
+    MatDialogModule,
+    ReactiveFormsModule
   ]
 })
 export class GlobalModule { }

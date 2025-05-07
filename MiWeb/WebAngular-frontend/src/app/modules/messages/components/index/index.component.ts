@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
 import { HttpMessagesService } from 'src/app/services/http.messages.service';
+import { MatDialog } from '@angular/material/dialog'
+import { FormComponent } from '../form/form.component'
 
 @Component({
   selector: 'app-index',
@@ -25,8 +27,8 @@ export class IndexComponent implements OnInit{
 
   constructor(
     private httpMessageService: HttpMessagesService,
-    private toastr: ToastrService
-  
+    private toastr: ToastrService,
+    private dialog: MatDialog
   ){}
 
   ngOnInit(): void {
@@ -54,6 +56,24 @@ export class IndexComponent implements OnInit{
       })
     }
   }
+
+
+  addMessage(){
+    const dialogRef = this.dialog.open(FormComponent, {
+      disableClose: true,
+      autoFocus: true,
+      closeOnNavigation: false,
+      position: { top: '30px'},
+      data:{
+        type: 'CREATE'
+      }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    })
+  }
+  
 
   ChangePageVariables(){
     let aditionalPage = this.totalQuantity%this.quantityPerPage > 0 ? 1 : 0;
