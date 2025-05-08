@@ -59,13 +59,26 @@ export class IndexComponent implements OnInit{
 
 
   addMessage(){
+    this.openDialog('CREATE', 0);
+  }
+
+  showMessage(id: any){
+    this.openDialog('SHOW', id);
+  }
+
+  editMessage(id: any){
+    this.openDialog('UPDATE', id);
+  }
+
+  openDialog(type:string, id: any){
     const dialogRef = this.dialog.open(FormComponent, {
       disableClose: true,
       autoFocus: true,
       closeOnNavigation: false,
       position: { top: '30px'},
       data:{
-        type: 'CREATE'
+        type: type,
+        id: id
       }
     });
 
@@ -73,7 +86,6 @@ export class IndexComponent implements OnInit{
       console.log(`Dialog result: ${result}`);
     })
   }
-  
 
   ChangePageVariables(){
     let aditionalPage = this.totalQuantity%this.quantityPerPage > 0 ? 1 : 0;

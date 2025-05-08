@@ -16,6 +16,32 @@ export class HttpMessagesService{
         return this.httpClient.get(urlWithParams);
     }
 
+    ReadOne(id:number){
+        let urlWithParams = `${this.urlBase}/${id}`;
+
+        return this.httpClient.get(urlWithParams);
+    }
+
+    Create(item: any){
+        const option = {
+            headers: new HttpHeaders({
+                'Content-type': 'application/json'
+            })
+        };
+        return this.httpClient.post(this.urlBase, item, option);   
+    }
+
+    Update(item: any){
+        let urlWithId = `${this.urlBase}/${item.id}`;
+
+        const option = {
+            headers: new HttpHeaders({
+                'Content-type': 'application/json'
+            })
+        };
+        return this.httpClient.put(urlWithId, item, option);   
+    }
+
     Delete(ids: number[]){
         const option = {
             headers: new HttpHeaders({

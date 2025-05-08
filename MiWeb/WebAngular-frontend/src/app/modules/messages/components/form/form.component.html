@@ -1,34 +1,31 @@
-<div class="container p-3">
-    <h1>titulo modal</h1>
-
+<form class="formContainer p-3" [formGroup]="formGroup" (ngSubmit)="save()">
+    <h1>Add Message</h1>
     <div>
-        <form [formGroup]="formGroup">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-6 mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Name</label>
-                        <input type="text" class="form-control" formControlName="name" name="name">
-                    </div>
-                    <div class="col-sm-6 mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email</label>
-                        <input type="email" class="form-control" formControlName="email" name="email">
-                    </div>
-                    <div class="col-sm-6 mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Subject</label>
-                        <input type="text" class="form-control" formControlName="subject" name="subject">
-                    </div>
-                    <div class="col-12 mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Message</label>
-                        <textarea id="message" rows="10" class="form-control" formControlName="messageText" name="messageText"></textarea>
-                    </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Name</label>
+                    <input type="text" [ngClass]="isNameValid ? 'form-control': 'form-control error-form-control'" name="name" id="name" formControlName="name" />
+                </div>
+                <div class="col-sm-6 mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" [ngClass]="isEmailValid ? 'form-control': 'form-control error-form-control'" name="email" id="email" formControlName="email" />
+                </div>
+                <div class="col-sm-12 mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Subject</label>
+                    <input type="text" [ngClass]="isSubjectValid ? 'form-control': 'form-control error-form-control'" name="subject" id="subject"  formControlName="subject" />
+                </div>
+                <div class="col-12 mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Message</label>
+                    <textarea id="message" rows="10" [ngClass]="isMessageValid ? 'form-control': 'form-control error-form-control'" name="messageText" id="messageText" formControlName="messageText"
+                        ></textarea>
                 </div>
             </div>
-        </form>
+        </div>
     </div>
 
     <div>
-        <button class="btn btn-light" (click)="cancelar()">Cancelar</button>
-        <button class="btn btn-primary" (click)="guardar()">Guadar</button>
+        <button class="btn btn-light me-1" (click)="cancel()">Cancelar</button>
+        <button type="submit" [ngClass]="isDisabled ? 'd-none' : 'btn btn-primary'">Guadar</button>
     </div>
-
-</div>
+</form>
