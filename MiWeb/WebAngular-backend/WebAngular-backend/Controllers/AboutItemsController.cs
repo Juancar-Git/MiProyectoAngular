@@ -13,14 +13,19 @@ namespace WebAngular_backend.Controllers
     [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class AboutItemsController : ApiController
     {
+
+        /*
+         *  url
+                http://localhost:3059/api/aboutitems
+         */
         [HttpGet]
-        public IHttpActionResult GetAll(int quantity = 10, string name = "Hola")
+        public IHttpActionResult GetAll()
         {
             var response = new ResponseVMR<List<AboutItemsVMR>>();
 
             try
             {
-                response.data = AboutItemsBLL.GetAll(quantity);
+                response.data = AboutItemsBLL.GetAll();
             }
             catch (Exception ex)
             {
@@ -33,6 +38,10 @@ namespace WebAngular_backend.Controllers
             return Content(response.code, response);
         }
 
+        /*
+         *  url
+                http://localhost:3059/api/aboutitems/1
+         */
         [HttpGet]
         public IHttpActionResult GetOne(long id)
         {

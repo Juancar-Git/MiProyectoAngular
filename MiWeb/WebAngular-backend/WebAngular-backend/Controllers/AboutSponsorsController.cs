@@ -13,14 +13,18 @@ namespace WebAngular_backend.Controllers
     [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class AboutSponsorsController : ApiController
     {
+        /*
+         *  url
+                http://localhost:3059/api/aboutsponsors
+         */
         [HttpGet]
-        public IHttpActionResult GetAll(int quantity = 10)
+        public IHttpActionResult GetAll()
         {
             var response = new ResponseVMR<List<AboutSponsorsVMR>>();
 
             try
             {
-                response.data = AboutSponsorsBLL.GetAll(quantity);
+                response.data = AboutSponsorsBLL.GetAll();
             }
             catch (Exception ex)
             {
@@ -33,6 +37,10 @@ namespace WebAngular_backend.Controllers
             return Content(response.code, response);
         }
 
+        /*
+         *  url
+                http://localhost:3059/api/aboutsponsors/1
+         */
         [HttpGet]
         public IHttpActionResult GetOne(long id)
         {

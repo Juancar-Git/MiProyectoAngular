@@ -10,14 +10,15 @@ namespace Datos.DAL
 {
     public class AboutItemsDAL
     {
+        
 
-        public static List<AboutItemsVMR> GetAll(int quantity)
+        public static List<AboutItemsVMR> GetAll()
         {
             List<AboutItemsVMR> result = new List<AboutItemsVMR>();
 
             using (var db = DbConexion.Create())
             {
-                var query = db.Set<AboutItems>().Select(x => new AboutItemsVMR
+                var query = db.Set<AboutItems>().Where(x => x.enabledItem).Select(x => new AboutItemsVMR
                 {
                     id = x.id,
                     title = x.title,
@@ -29,13 +30,12 @@ namespace Datos.DAL
 
                 result = query
                     .OrderBy(x => x.id)
-                    .Take(quantity)
                     .ToList();
             }
 
             return result;
         }
-
+        
         public static AboutItemsVMR GetOne(long id)
         {
             AboutItemsVMR item = null;

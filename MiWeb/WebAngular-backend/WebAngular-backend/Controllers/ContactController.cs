@@ -13,6 +13,11 @@ namespace WebAngular_backend.Controllers
     [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class ContactController : ApiController
     {
+         
+        /*
+         *  url
+                http://localhost:3059/api/contact/1
+         */
         [HttpGet]
         public IHttpActionResult GetOne(long id)
         {

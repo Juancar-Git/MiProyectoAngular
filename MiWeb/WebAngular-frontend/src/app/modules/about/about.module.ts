@@ -1,9 +1,7 @@
-import { NgModule } from '@angular/core';
+import { NgModule, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IndexComponent } from './components/index/index.component';
 import { GlobalModule } from '../global/global.module';
-
-
 
 @NgModule({
   declarations: [
@@ -14,4 +12,5 @@ import { GlobalModule } from '../global/global.module';
     GlobalModule
   ]
 })
-export class AboutModule { }
+export class AboutModule{ 
+}

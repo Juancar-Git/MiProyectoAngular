@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{015E24DA-7741-441E-99FD-9759EFF20443}|WebAngular-backend\\WebAngular-backend.csproj|c:\\users\\carlos\\onedrive\\escritorio\\webangular\\miproyectoangular\\miweb\\webangular-backend\\webangular-backend\\controllers\\contactmessagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{015E24DA-7741-441E-99FD-9759EFF20443}|WebAngular-backend\\WebAngular-backend.csproj|solutionrelative:webangular-backend\\controllers\\contactmessagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BA1526E5-D921-4A05-B7A3-31A1A061F415}|Logica\\Logica.csproj|c:\\users\\carlos\\onedrive\\escritorio\\webangular\\miproyectoangular\\miweb\\webangular-backend\\logica\\bll\\aboutitemsbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA1526E5-D921-4A05-B7A3-31A1A061F415}|Logica\\Logica.csproj|solutionrelative:logica\\bll\\aboutitemsbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA1526E5-D921-4A05-B7A3-31A1A061F415}|Logica\\Logica.csproj|C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\logica\\bll\\contactmessagesbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA1526E5-D921-4A05-B7A3-31A1A061F415}|Logica\\Logica.csproj|solutionrelative:logica\\bll\\contactmessagesbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B9751D38-8B31-4390-9FE0-838DABF607E9}|Datos\\Datos.csproj|c:\\users\\carlos\\onedrive\\escritorio\\webangular\\miproyectoangular\\miweb\\webangular-backend\\datos\\dal\\aboutitemsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9751D38-8B31-4390-9FE0-838DABF607E9}|Datos\\Datos.csproj|solutionrelative:datos\\dal\\aboutitemsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{015E24DA-7741-441E-99FD-9759EFF20443}|WebAngular-backend\\WebAngular-backend.csproj|C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\webangular-backend\\controllers\\aboutitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{015E24DA-7741-441E-99FD-9759EFF20443}|WebAngular-backend\\WebAngular-backend.csproj|c:\\users\\carlos\\onedrive\\escritorio\\webangular\\miproyectoangular\\miweb\\webangular-backend\\webangular-backend\\controllers\\aboutitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{015E24DA-7741-441E-99FD-9759EFF20443}|WebAngular-backend\\WebAngular-backend.csproj|solutionrelative:webangular-backend\\controllers\\aboutitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9751D38-8B31-4390-9FE0-838DABF607E9}|Datos\\Datos.csproj|C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\datos\\dal\\contactmessagesdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9751D38-8B31-4390-9FE0-838DABF607E9}|Datos\\Datos.csproj|solutionrelative:datos\\dal\\contactmessagesdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{015E24DA-7741-441E-99FD-9759EFF20443}|WebAngular-backend\\WebAngular-backend.csproj|C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\webangular-backend\\controllers\\portfolioitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{015E24DA-7741-441E-99FD-9759EFF20443}|WebAngular-backend\\WebAngular-backend.csproj|solutionrelative:webangular-backend\\controllers\\portfolioitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDDE6B9D-1D3E-4D1B-8B7F-F7B98F72A710}|Comun\\Comun.csproj|C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\comun\\viewmodel\\contactmessagesvmr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDDE6B9D-1D3E-4D1B-8B7F-F7B98F72A710}|Comun\\Comun.csproj|solutionrelative:comun\\viewmodel\\contactmessagesvmr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{015E24DA-7741-441E-99FD-9759EFF20443}|WebAngular-backend\\WebAngular-backend.csproj|C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\webangular-backend\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{015E24DA-7741-441E-99FD-9759EFF20443}|WebAngular-backend\\WebAngular-backend.csproj|solutionrelative:webangular-backend\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9751D38-8B31-4390-9FE0-838DABF607E9}|Datos\\Datos.csproj|c:\\users\\carlos\\onedrive\\escritorio\\webangular\\miproyectoangular\\miweb\\webangular-backend\\datos\\dal\\aboutdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9751D38-8B31-4390-9FE0-838DABF607E9}|Datos\\Datos.csproj|solutionrelative:datos\\dal\\aboutdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{015E24DA-7741-441E-99FD-9759EFF20443}|WebAngular-backend\\WebAngular-backend.csproj|C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\webangular-backend\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{015E24DA-7741-441E-99FD-9759EFF20443}|WebAngular-backend\\WebAngular-backend.csproj|solutionrelative:webangular-backend\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{015E24DA-7741-441E-99FD-9759EFF20443}|WebAngular-backend\\WebAngular-backend.csproj|c:\\users\\carlos\\onedrive\\escritorio\\webangular\\miproyectoangular\\miweb\\webangular-backend\\webangular-backend\\controllers\\servicesitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{015E24DA-7741-441E-99FD-9759EFF20443}|WebAngular-backend\\WebAngular-backend.csproj|solutionrelative:webangular-backend\\controllers\\servicesitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,51 +46,15 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ContactMessagesVMR.cs",
-              "DocumentMoniker": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\Comun\\ViewModel\\ContactMessagesVMR.cs",
-              "RelativeDocumentMoniker": "Comun\\ViewModel\\ContactMessagesVMR.cs",
-              "ToolTip": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\Comun\\ViewModel\\ContactMessagesVMR.cs",
-              "RelativeToolTip": "Comun\\ViewModel\\ContactMessagesVMR.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T08:44:06.628Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ContactMessagesDAL.cs",
-              "DocumentMoniker": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\Datos\\DAL\\ContactMessagesDAL.cs",
-              "RelativeDocumentMoniker": "Datos\\DAL\\ContactMessagesDAL.cs",
-              "ToolTip": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\Datos\\DAL\\ContactMessagesDAL.cs",
-              "RelativeToolTip": "Datos\\DAL\\ContactMessagesDAL.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAADwvzgAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T10:41:05.5Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ContactMessagesBLL.cs",
-              "DocumentMoniker": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\Logica\\BLL\\ContactMessagesBLL.cs",
-              "RelativeDocumentMoniker": "Logica\\BLL\\ContactMessagesBLL.cs",
-              "ToolTip": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\Logica\\BLL\\ContactMessagesBLL.cs",
-              "RelativeToolTip": "Logica\\BLL\\ContactMessagesBLL.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAcwBsAAAA9AAAA",
+              "Title": "AboutItemsDAL.cs",
+              "DocumentMoniker": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\Datos\\DAL\\AboutItemsDAL.cs",
+              "RelativeDocumentMoniker": "Datos\\DAL\\AboutItemsDAL.cs",
+              "ToolTip": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\Datos\\DAL\\AboutItemsDAL.cs",
+              "RelativeToolTip": "Datos\\DAL\\AboutItemsDAL.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAtwBQAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T08:43:27.367Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ContactMessagesController.cs",
-              "DocumentMoniker": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\WebAngular-backend\\Controllers\\ContactMessagesController.cs",
-              "RelativeDocumentMoniker": "WebAngular-backend\\Controllers\\ContactMessagesController.cs",
-              "ToolTip": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\WebAngular-backend\\Controllers\\ContactMessagesController.cs",
-              "RelativeToolTip": "WebAngular-backend\\Controllers\\ContactMessagesController.cs",
-              "ViewState": "AQIAAGoAAAAAAAAAAAAiwHYAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T14:10:27.757Z",
+              "WhenOpened": "2025-05-09T15:54:19.705Z",
               "EditorCaption": ""
             },
             {
@@ -89,9 +65,87 @@
               "RelativeDocumentMoniker": "WebAngular-backend\\Controllers\\AboutItemsController.cs",
               "ToolTip": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\WebAngular-backend\\Controllers\\AboutItemsController.cs",
               "RelativeToolTip": "WebAngular-backend\\Controllers\\AboutItemsController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwCIAAAAAAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBsAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T14:06:51.706Z",
+              "WhenOpened": "2025-05-09T15:53:50.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AboutDAL.cs",
+              "DocumentMoniker": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\Datos\\DAL\\AboutDAL.cs",
+              "RelativeDocumentMoniker": "Datos\\DAL\\AboutDAL.cs",
+              "ToolTip": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\Datos\\DAL\\AboutDAL.cs",
+              "RelativeToolTip": "Datos\\DAL\\AboutDAL.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T14:49:04.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AboutItemsBLL.cs",
+              "DocumentMoniker": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\Logica\\BLL\\AboutItemsBLL.cs",
+              "RelativeDocumentMoniker": "Logica\\BLL\\AboutItemsBLL.cs",
+              "ToolTip": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\Logica\\BLL\\AboutItemsBLL.cs",
+              "RelativeToolTip": "Logica\\BLL\\AboutItemsBLL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T14:30:24.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ServicesItemsController.cs",
+              "DocumentMoniker": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\WebAngular-backend\\Controllers\\ServicesItemsController.cs",
+              "RelativeDocumentMoniker": "WebAngular-backend\\Controllers\\ServicesItemsController.cs",
+              "ToolTip": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\WebAngular-backend\\Controllers\\ServicesItemsController.cs",
+              "RelativeToolTip": "WebAngular-backend\\Controllers\\ServicesItemsController.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAUwBsAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T09:14:48.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PortfolioItemsController.cs",
+              "DocumentMoniker": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\WebAngular-backend\\Controllers\\PortfolioItemsController.cs",
+              "RelativeDocumentMoniker": "WebAngular-backend\\Controllers\\PortfolioItemsController.cs",
+              "ToolTip": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\WebAngular-backend\\Controllers\\PortfolioItemsController.cs",
+              "RelativeToolTip": "WebAngular-backend\\Controllers\\PortfolioItemsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T09:00:55.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\WebAngular-backend\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "WebAngular-backend\\Controllers\\ContactController.cs",
+              "ToolTip": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\WebAngular-backend\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "WebAngular-backend\\Controllers\\ContactController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T08:18:56.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AboutController.cs",
+              "DocumentMoniker": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\WebAngular-backend\\Controllers\\AboutController.cs",
+              "RelativeDocumentMoniker": "WebAngular-backend\\Controllers\\AboutController.cs",
+              "ToolTip": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\WebAngular-backend\\Controllers\\AboutController.cs",
+              "RelativeToolTip": "WebAngular-backend\\Controllers\\AboutController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABsAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T07:34:44.534Z",
               "EditorCaption": ""
             }
           ]

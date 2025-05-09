@@ -10,7 +10,7 @@ namespace Datos.DAL
 {
     public class ServicesItemsDAL
     {
-        public static List<ServicesItemsVMR> GetAll(int quantity)
+        public static List<ServicesItemsVMR> GetAll()
         {
             List<ServicesItemsVMR> result = new List<ServicesItemsVMR>();
 
@@ -28,7 +28,6 @@ namespace Datos.DAL
 
                 result = query
                     .OrderBy(x => x.id)
-                    .Take(quantity)
                     .ToList();
             }
 

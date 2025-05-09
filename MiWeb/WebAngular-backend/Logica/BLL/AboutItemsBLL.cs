@@ -11,9 +11,9 @@ namespace Logica.BLL
 {
     public class AboutItemsBLL
     {
-        public static List<AboutItemsVMR> GetAll(int quantity)
+        public static List<AboutItemsVMR> GetAll()
         {
-            return AboutItemsDAL.GetAll(quantity);
+            return AboutItemsDAL.GetAll();
         }
         public static AboutItemsVMR GetOne(long id)
         {
