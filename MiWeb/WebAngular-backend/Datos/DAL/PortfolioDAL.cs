@@ -16,7 +16,7 @@ namespace Datos.DAL
 
             using (var db = DbConexion.Create())
             {
-                item = db.Set<Portfolio>().Where(x => x.id == id).Select(x => new PortfolioVMR
+                item = db.Set<Portfolio>().Where(x => x.generalPageId == id).Select(x => new PortfolioVMR
                 {
                     id = x.id,
                     sectionName = x.sectionName,

@@ -2,11 +2,11 @@
     <div class="row text-center">
         <div class="row mb-3">
             <div>
-                <span class="section-name px-3 py-2 fw-bold">Portfolio</span>
+                <span class="section-name px-3 py-2 fw-bold">{{portfolio.sectionName}}</span>
             </div>
         </div>
         <div class="row">
-            <p class="fs-2"><b>Check Our <span class="section-title">Portfolio</span></b></p>
+            <p class="fs-2"><b>{{ portfolio.title.split(",")[0]}}<span class="section-title">{{ portfolio.title.split(",")[1]}}</span></b></p>
         </div>
         <div class="container py-5">
             <ul class="nav nav-pills justify-content-center py-1">
@@ -27,32 +27,8 @@
         
         <div class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
-                <div class="col">
-                    <img class="img-fluid" src="../../../../../assets/img/masonry-portfolio/masonry-portfolio-1.jpg" alt="">
-                </div>
-                <div class="col">
-                    <img class="img-fluid" src="../../../../../assets/img/masonry-portfolio/masonry-portfolio-2.jpg" alt="">
-                </div>
-                <div class="col">
-                    <img class="img-fluid" src="../../../../../assets/img/masonry-portfolio/masonry-portfolio-3.jpg" alt="">
-                </div>
-                <div class="col">
-                    <img class="img-fluid" src="../../../../../assets/img/masonry-portfolio/masonry-portfolio-4.jpg" alt="">
-                </div>
-                <div class="col">
-                    <img class="img-fluid" src="../../../../../assets/img/masonry-portfolio/masonry-portfolio-5.jpg" alt="">
-                </div>
-                <div class="col">
-                    <img class="img-fluid" src="../../../../../assets/img/masonry-portfolio/masonry-portfolio-6.jpg" alt="">
-                </div>
-                <div class="col">
-                    <img class="img-fluid" src="../../../../../assets/img/masonry-portfolio/masonry-portfolio-7.jpg" alt="">
-                </div>
-                <div class="col">
-                    <img class="img-fluid" src="../../../../../assets/img/masonry-portfolio/masonry-portfolio-8.jpg" alt="">
-                </div>
-                <div class="col">
-                    <img class="img-fluid" src="../../../../../assets/img/masonry-portfolio/masonry-portfolio-9.jpg" alt="">
+                <div class="col" *ngFor="let item of portfolioItems">
+                    <img class="img-fluid" [src]="item.pictureUrl" alt="">
                 </div>
             </div>
         </div>

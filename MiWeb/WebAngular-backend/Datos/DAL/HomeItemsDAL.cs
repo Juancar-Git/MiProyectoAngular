@@ -16,7 +16,7 @@ namespace Datos.DAL
 
             using (var db = DbConexion.Create())
             {
-                var query = db.Set<HomeItems>().Select(x => new HomeItemsVMR
+                var query = db.Set<HomeItems>().Where(x => x.enabledItem).Select(x => new HomeItemsVMR
                 {
                     id = x.id,
                     title = x.title,

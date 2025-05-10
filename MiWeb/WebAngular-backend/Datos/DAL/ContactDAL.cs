@@ -16,7 +16,7 @@ namespace Datos.DAL
 
             using (var db = DbConexion.Create())
             {
-                item = db.Set<Contact>().Where(x => x.id == id).Select(x => new ContactVMR
+                item = db.Set<Contact>().Where(x => x.generalPageId == id).Select(x => new ContactVMR
                 {
                     id = x.id,
                     sectionName = x.sectionName,

@@ -10,6 +10,10 @@ export class HttpPortfolioItemsService {
 
   constructor(private httpClient: HttpClient) {}
 
+  ReadAll(){
+        return this.httpClient.get(this.urlBase);
+    }
+    
   ReadOne(id: number) {
     let urlWithParams = `${this.urlBase}/${id}`;
 
