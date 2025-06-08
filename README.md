@@ -1,2 +1,2 @@
 # MiProyectoAngular
-This project was developed using Blazor, BootstrapMade template, C#.NET and SQL Server technologies
+This project was developed using Angular, TypeScript, Bootstrap, C#.NET and SQL Server technologies
