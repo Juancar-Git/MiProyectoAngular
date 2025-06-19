@@ -3,15 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{015E24DA-7741-441E-99FD-9759EFF20443}|WebAngular-backend\\WebAngular-backend.csproj|c:\\users\\carlos\\onedrive\\escritorio\\webangular\\miproyectoangular\\miweb\\webangular-backend\\webangular-backend\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{015E24DA-7741-441E-99FD-9759EFF20443}|WebAngular-backend\\WebAngular-backend.csproj|solutionrelative:webangular-backend\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{015E24DA-7741-441E-99FD-9759EFF20443}|WebAngular-backend\\WebAngular-backend.csproj|c:\\users\\carlos\\onedrive\\escritorio\\webangular\\miproyectoangular\\miweb\\webangular-backend\\webangular-backend\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{015E24DA-7741-441E-99FD-9759EFF20443}|WebAngular-backend\\WebAngular-backend.csproj|solutionrelative:webangular-backend\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{015E24DA-7741-441E-99FD-9759EFF20443}|WebAngular-backend\\WebAngular-backend.csproj|c:\\users\\carlos\\onedrive\\escritorio\\webangular\\miproyectoangular\\miweb\\webangular-backend\\webangular-backend\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{015E24DA-7741-441E-99FD-9759EFF20443}|WebAngular-backend\\WebAngular-backend.csproj|C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\webangular-backend\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{015E24DA-7741-441E-99FD-9759EFF20443}|WebAngular-backend\\WebAngular-backend.csproj|solutionrelative:webangular-backend\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{015E24DA-7741-441E-99FD-9759EFF20443}|WebAngular-backend\\WebAngular-backend.csproj|c:\\users\\carlos\\onedrive\\escritorio\\webangular\\miproyectoangular\\miweb\\webangular-backend\\webangular-backend\\controllers\\contactdatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{015E24DA-7741-441E-99FD-9759EFF20443}|WebAngular-backend\\WebAngular-backend.csproj|C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\webangular-backend\\controllers\\contactdatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{015E24DA-7741-441E-99FD-9759EFF20443}|WebAngular-backend\\WebAngular-backend.csproj|solutionrelative:webangular-backend\\controllers\\contactdatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,11 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\WebAngular-backend\\Web.config",
+              "RelativeDocumentMoniker": "WebAngular-backend\\Web.config",
+              "ToolTip": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\WebAngular-backend\\Web.config",
+              "RelativeToolTip": "WebAngular-backend\\Web.config",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-06-19T06:26:26.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ContactDataController.cs",
               "DocumentMoniker": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\WebAngular-backend\\Controllers\\ContactDataController.cs",
               "RelativeDocumentMoniker": "WebAngular-backend\\Controllers\\ContactDataController.cs",
@@ -34,12 +51,11 @@
               "RelativeToolTip": "WebAngular-backend\\Controllers\\ContactDataController.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAvwBsAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T13:44:16.458Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T13:44:16.458Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ContactController.cs",
               "DocumentMoniker": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\WebAngular-backend\\Controllers\\ContactController.cs",
               "RelativeDocumentMoniker": "WebAngular-backend\\Controllers\\ContactController.cs",
@@ -52,7 +68,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\carlos\\OneDrive\\Escritorio\\WebAngular\\MiProyectoAngular\\MiWeb\\WebAngular-backend\\WebAngular-backend\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "WebAngular-backend\\Controllers\\HomeController.cs",
@@ -60,8 +76,7 @@
               "RelativeToolTip": "WebAngular-backend\\Controllers\\HomeController.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAIAwwBsAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T11:31:30.071Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T11:31:30.071Z"
             }
           ]
         }

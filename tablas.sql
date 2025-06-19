@@ -134,7 +134,6 @@ ALTER TABLE [dbo].[About] CHECK CONSTRAINT [FK_About_GeneralPage]
 GO
 
 
-
 ------------------------------------------------------
 -- 			AboutItems TABLE
 ------------------------------------------------------
